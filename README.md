@@ -14,7 +14,7 @@ Pipeline de streaming em tempo real de dados simulados (JSON), enviados para Azu
 Arquitetura do Pipeline de Streaming em Tempo Real
 
 1. Geração de Dados Simulados
-   - Tecnologia: Script Python (ou app em .NET/Node.js)
+   - Tecnologia: Script Python/PySpark
    - Formato dos Dados: JSON
    - Descrição: Gera eventos contínuos (e.g., sensores, cliques, logs) e envia para o Azure Event Hub.
 
