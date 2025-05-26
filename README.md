@@ -1,5 +1,7 @@
 # Processamento de Eventos em Tempo Real
+
 ![alt text](cover.png)
+
 ## Visão Geral
 Pipeline de streaming em tempo real de dados simulados (JSON), enviados para Azure Event Hub, processados com Databricks (Structured Streaming) e gravados no SQL Server para consumo por um dashboard em Power BI.
 ## Objetivos
@@ -43,6 +45,7 @@ Arquitetura do Pipeline de Streaming em Tempo Real
    - Finalidade: Visualização em tempo quase real dos dados processados
 
 ![alt text](architecture.png)
+
 #
 #
 #
