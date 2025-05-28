@@ -49,7 +49,7 @@ Arquitetura do Pipeline de Streaming em Tempo Real
 ![alt text](image.png)
 
 ## Documentações Utilizadas
-https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about
+https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
 
 #
 #
