@@ -46,7 +46,6 @@ Pipeline de streaming em tempo real de dados simulados (JSON), enviados para o A
 
 ## Documentações Utilizadas
 https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
-
 #
 #
 #
