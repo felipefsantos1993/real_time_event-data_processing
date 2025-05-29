@@ -3,18 +3,16 @@
 ![alt text](cover.png)
 
 ## Visão Geral
-Pipeline de streaming em tempo real de dados simulados (JSON), enviados para Azure Event Hub, processados com Databricks (Structured Streaming) e gravados no SQL Server para consumo por um dashboard em Power BI.
+Pipeline de streaming em tempo real de dados simulados (JSON), enviados para o Azure Event Hub, processados com Databricks (Structured Streaming) e gravados no SQL Server para consumo por um dashboard em Power BI.
 ## Objetivos
 - Processamento e entrega de dados em tempo real
 ## Tecnologias
 - Python: geração de dados
-- Azure Event Hub: ingestão
-- Azure Databricks: processamento em streaming
+- Azure Event Hub: ingestão de dados
+- Databricks: processamento em streaming
 - SQL Server: armazenamento
 - Power BI: dashboard
 ## Arquitetura
-Arquitetura do Pipeline de Streaming em Tempo Real
-
 1. Geração de Dados Simulados
    - Tecnologia: Script Python
    - Formato dos Dados: JSON
@@ -25,10 +23,10 @@ Arquitetura do Pipeline de Streaming em Tempo Real
    - Função: Recebe eventos em tempo real e os armazena temporariamente para consumo por múltiplos consumidores.
    - Formato de ingestão: JSON
 
-3. Processamento com Azure Databricks
+3. Processamento com Databricks
    - Tecnologia: Databricks com Apache Spark (Structured Streaming)
    - Função:
-     - Leitura dos eventos do Event Hub
+     - Leitura dos eventos do Azure Event Hub
      - Parsing do JSON
      - Transformações/limpezas/validações
      - Agregações em janelas (opcional)
@@ -52,5 +50,51 @@ https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
 #
 #
 #
-# Real Time Event Processing
+# Real-Time Event Processing
 
+![alt text](cover.png)
+
+## Overview
+Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, processed with Databricks (Structured Streaming) and written to SQL Server for consumption by a Power BI dashboard.
+## Objetivos
+- Real-time data processing and delivery
+## Technologies
+- Python: data generation
+- Azure Event Hub: data ingestion
+- Databricks: streaming processing
+- SQL Server: storage
+- Power BI: dashboard
+## Architecture
+1. Simulated Data Generation
+   - Technology: Python script
+   - Data Format: JSON
+   - Description: Generates continuous events (e.g., sensors, clicks, logs) and sends them to Azure Event Hub.
+
+2. Ingestion with Azure Event Hub
+   - Service: Azure Event Hub (Standard Tier)
+   - Function: Receives events in real-time and stores them temporarily for consumption by multiple consumers.
+   - Ingestion Format: JSON
+
+3. Processing with Databricks
+   - Technology: Databricks with Apache Spark (Structured Streaming)
+   - Function:
+     - Reading Azure Event Hub events
+     - JSON parsing
+     - Transformations/cleanings/validations
+     - Windowed aggregations (optional)
+   - Output: Structured DataFrame ready for persistence
+
+4. Database Persistence
+   - Target: SQL Server (Azure SQL or VM with SQL Server)
+   - Method: writeStream.foreachBatch writing for JDBC
+   - Format: Relational tables with defined schema
+
+5. View Layer
+   - Tool: Power BI
+   - Access Mode: Import or DirectQuery to SQL Server
+   - Purpose: Near real-time visualization of processed data
+
+![alt text](architecture.png)
+
+## Documentation Used
+https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
