@@ -5,7 +5,7 @@
 ## Visão Geral
 Pipeline de streaming em tempo real de dados simulados (JSON), enviados para o Azure Event Hub, processados com Databricks (Structured Streaming) e gravados no SQL Server para consumo por um dashboard em Power BI.
 ## Objetivos
-- Processamento e entrega de dados em tempo real
+- Processamento e entrega de dados em tempo real.
 ## Tecnologias
 - Python: geração de dados
 - Azure Event Hub: ingestão de dados
@@ -40,7 +40,7 @@ Pipeline de streaming em tempo real de dados simulados (JSON), enviados para o A
 5. Camada de Visualização
    - Ferramenta: Power BI
    - Modo de Acesso: Import ou DirectQuery ao SQL Server
-   - Finalidade: Visualização em tempo quase real dos dados processados
+   - Finalidade: Visualização em tempo quase real dos dados processados.
 
 ![alt text](architecture.png)
 
@@ -57,7 +57,7 @@ https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
 ## Overview
 Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, processed with Databricks (Structured Streaming) and written to SQL Server for consumption by a Power BI dashboard.
 ## Objetivos
-- Real-time data processing and delivery
+- Real-time data processing and delivery.
 ## Technologies
 - Python: data generation
 - Azure Event Hub: data ingestion
@@ -92,7 +92,7 @@ Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, 
 5. View Layer
    - Tool: Power BI
    - Access Mode: Import or DirectQuery to SQL Server
-   - Purpose: Near real-time visualization of processed data
+   - Purpose: Near real-time visualization of processed data.
 
 ![alt text](architecture.png)
 
