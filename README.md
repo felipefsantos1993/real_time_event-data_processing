@@ -14,7 +14,7 @@ Pipeline de streaming em tempo real de dados simulados (JSON), enviados para o A
 - Power BI: dashboard
 ## Arquitetura
 1. Geração de Dados Simulados
-   - Tecnologia: Script Python
+   - Tecnologia: script Python
    - Formato dos Dados: JSON
    - Descrição: Gera eventos contínuos (e.g., sensores, cliques, logs) e envia para o Azure Event Hub.
 
@@ -35,12 +35,12 @@ Pipeline de streaming em tempo real de dados simulados (JSON), enviados para o A
 4. Persistência em Banco de Dados
    - Destino: SQL Server (Azure SQL ou VM com SQL Server)
    - Método: writeStream.foreachBatch gravando via JDBC
-   - Formato: Tabelas relacionais com esquema definido
+   - Formato: tabelas relacionais com esquema definido
 
 5. Camada de Visualização
    - Ferramenta: Power BI
-   - Modo de Acesso: Import ou DirectQuery ao SQL Server
-   - Finalidade: Visualização em tempo quase real dos dados processados.
+   - Modo de Acesso: import ou DirectQuery ao SQL Server
+   - Finalidade: visualização em tempo quase real dos dados processados.
 
 ![alt text](architecture.png)
 
@@ -81,17 +81,17 @@ Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, 
      - JSON parsing
      - Transformations/cleanings/validations
      - Windowed aggregations (optional)
-   - Output: Structured DataFrame ready for persistence
+   - Output: structured DataFrame ready for persistence
 
 4. Database Persistence
    - Target: SQL Server (Azure SQL or VM with SQL Server)
    - Method: writeStream.foreachBatch writing for JDBC
-   - Format: Relational tables with defined schema
+   - Format: relational tables with defined schema
 
 5. View Layer
    - Tool: Power BI
-   - Access Mode: Import or DirectQuery to SQL Server
-   - Purpose: Near real-time visualization of processed data.
+   - Access Mode: import or DirectQuery to SQL Server
+   - Purpose: near real-time visualization of processed data.
 
 ![alt text](architecture.png)
 
