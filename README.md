@@ -55,7 +55,7 @@ https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
 
 ## Overview
 Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, processed with Databricks (Structured Streaming) and written to SQL Server for consumption by a Power BI dashboard.
-## Objetivos
+## Objectives
 - Real-time data processing and delivery.
 ## Technologies
 - Python: data generation
@@ -95,5 +95,5 @@ Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, 
 
 ![alt text](architecture.png)
 
-## Documentation Used
+## Documentations Used
 https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
