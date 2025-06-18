@@ -51,7 +51,7 @@ https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
 #
 # Real-Time Event Processing
 
-![alt text](cover.png)
+![alt text](<cover.png>)
 
 ## Overview
 Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, processed with Databricks (Structured Streaming) and written to SQL Server for consumption by a Power BI dashboard.
