@@ -42,7 +42,7 @@ Pipeline de streaming em tempo real de dados simulados (JSON), enviados para o A
    - Modo de Acesso: import ou DirectQuery ao SQL Server
    - Finalidade: visualização em tempo quase real dos dados processados.
 
-![alt text](<architecture.png>)
+![alt text](architecture.png)
 
 ## Documentações Utilizadas
 https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
@@ -93,7 +93,7 @@ Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, 
    - Access Mode: import or DirectQuery to SQL Server
    - Purpose: near real-time visualization of processed data.
 
-![alt text](<architecture.png>)
+![alt text](architecture.png)
 
 ## Documentations Used
 https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
