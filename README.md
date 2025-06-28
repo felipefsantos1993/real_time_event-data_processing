@@ -1,5 +1,3 @@
-# Processamento de Eventos em Tempo Real
-
 ![alt text](cover.png)
 
 ## Visão Geral
@@ -49,8 +47,6 @@ https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
 #
 #
 #
-# Real-Time Event Processing
-
 ![alt text](<cover.png>)
 
 ## Overview
