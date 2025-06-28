@@ -39,7 +39,7 @@ Pipeline de streaming em tempo real de dados simulados (JSON), enviados para o A
 
 5. Camada de Visualização
    - Ferramenta: Power BI
-   - Modo de Acesso: import ou DirectQuery ao SQL Server
+   - Modo de Acesso: Import ou DirectQuery ao SQL Server
    - Finalidade: visualização em tempo quase real dos dados processados.
 
 ![alt text](architecture.png)
@@ -61,7 +61,7 @@ Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, 
 - Python: data generation
 - Azure Event Hub: data ingestion
 - Databricks: streaming processing
-- SQL Server: storage
+- SQL Server: storaging
 - Power BI: dashboard
 ## Architecture
 1. Simulated Data Generation
@@ -90,10 +90,10 @@ Real-time streaming pipeline of simulated data (JSON), sent to Azure Event Hub, 
 
 5. View Layer
    - Tool: Power BI
-   - Access Mode: import or DirectQuery to SQL Server
-   - Purpose: near real-time visualization of processed data.
+   - Access Mode: Import or DirectQuery to SQL Server
+   - Purpose: real-time visualization of processed data.
 
 ![alt text](architecture.png)
 
-## Documentations Used
+## Documentation Used
 https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create
