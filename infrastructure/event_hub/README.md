@@ -24,7 +24,7 @@ eventhub-terraform/
 ### 1. Extraia o ZIP
 
 ```bash
-unzip eventhub-terraform.zip
+unzip event_hub-terraform.zip
 cd eventhub-terraform
 ```
 
