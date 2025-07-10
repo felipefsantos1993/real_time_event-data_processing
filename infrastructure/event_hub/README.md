@@ -1,6 +1,6 @@
-# 🚀 Terraform para Azure Event Hub
+# Terraform para Azure Event Hub
 
-## ✅ Pré-requisitos
+## Pré-requisitos
 
 - [Terraform instalado](https://developer.hashicorp.com/terraform/downloads)
 - [Azure CLI instalado](https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli)
@@ -8,7 +8,7 @@
 
 ---
 
-## 📁 Estrutura dos Arquivos
+## Estrutura dos Arquivos
 
 ```
 eventhub-terraform/
@@ -19,9 +19,9 @@ eventhub-terraform/
 
 ---
 
-## 🧭 Passo a Passo
+## Passo a Passo
 
-### 1. 📂 Extraia o ZIP
+### 1. Extraia o ZIP
 
 ```bash
 unzip eventhub-terraform.zip
@@ -30,7 +30,7 @@ cd eventhub-terraform
 
 ---
 
-### 2. 🔐 Faça login no Azure
+### 2. Faça login no Azure
 
 ```bash
 az login
@@ -44,7 +44,7 @@ az account set --subscription "ID-ou-nome-da-assinatura"
 
 ---
 
-### 3. ⚙️ Inicialize o Terraform
+### 3. Inicialize o Terraform
 
 ```bash
 terraform init
@@ -52,7 +52,7 @@ terraform init
 
 ---
 
-### 4. 👁️ Visualize o que será criado
+### 4. Visualize o que será criado
 
 ```bash
 terraform plan
@@ -60,7 +60,7 @@ terraform plan
 
 ---
 
-### 5. 🚀 Aplique a infraestrutura
+### 5. Aplique a infraestrutura
 
 ```bash
 terraform apply
@@ -70,7 +70,7 @@ Digite `yes` quando solicitado.
 
 ---
 
-### 6. 📤 Veja os outputs
+### 6. Veja os outputs
 
 Você verá os seguintes valores:
 
@@ -80,7 +80,7 @@ Você verá os seguintes valores:
 
 ---
 
-### 🧽 (Opcional) Destruir a infraestrutura
+### (Opcional) Destruir a infraestrutura
 
 ```bash
 terraform destroy
@@ -88,14 +88,10 @@ terraform destroy
 
 ---
 
-## 📌 Observações
+## Observações
 
 - O `namespace_name` precisa ser **único globalmente**.
 - A connection string é necessária para que aplicativos enviem mensagens para o Event Hub.
 - Você pode adaptar este projeto para múltiplos ambientes com arquivos `.tfvars`.
 
 ---
-
-## 📄 Licença
-
-Uso livre para fins educacionais e comerciais.
